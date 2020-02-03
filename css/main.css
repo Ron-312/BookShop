@@ -1,0 +1,158 @@
+body {
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px;
+}
+
+h5 {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+input {
+    transition: 0.3s;
+}
+
+input:focus {
+    background-color: lightcyan;
+}
+
+button {
+    user-select: none;
+}
+
+.pages {
+    display: inline-block;
+}
+
+.curr-page {
+    background-color: lightskyblue;
+    pointer-events: none;
+}
+
+.modal {
+    background: rgb(102, 187, 165);
+    background: radial-gradient(circle, rgba(102, 187, 165, 1) 0%, rgba(55, 149, 89, 1) 100%);
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    width: 80%;
+}
+
+footer {
+    background-color: darkblue;
+    padding: 10px;
+    color: lightgray;
+}
+
+footer a {
+    color: #ff0000;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+header img {
+    width: 200px;
+    float: right;
+}
+
+.modal img {
+    height: 300px;
+    width: 200px;
+}
+
+
+/* table */
+
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    border-spacing: 0.5rem;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+td:nth-child(1) {
+    background: hsl(150, 50%, 50%);
+}
+
+td:nth-child(2) {
+    background: hsl(160, 60%, 50%);
+}
+
+td:nth-child(3) {
+    background: hsl(170, 70%, 50%);
+}
+
+td:nth-child(4) {
+    background: hsl(180, 80%, 50%);
+}
+
+td:nth-child(5) {
+    background: hsl(190, 90%, 50%);
+}
+
+td:nth-child(6) {
+    background: hsl(200, 99%, 50%);
+}
+
+th {
+    background: hsl(276, 67%, 22%);
+}
+
+.th-price {
+    width: 70px;
+}
+
+.th-price:hover {
+    cursor: grab;
+}
+
+.th-title {
+    min-width: 190px;
+    max-width: 300px;
+}
+
+.th-title:hover {
+    cursor: grab;
+}
+
+.th-actions {
+    width: 100px;
+}
+
+.btn-read {
+    border-radius: 6px;
+    background: rgb(9, 9, 121);
+    background: linear-gradient(352deg, rgba(9, 9, 121, 1) 18%, rgba(6, 68, 160, 1) 57%, rgba(0, 212, 255, 1) 100%);
+}
+
+.btn-update {
+    border-radius: 6px;
+    background: rgb(138, 138, 8);
+    background: linear-gradient(352deg, rgba(138, 138, 8, 1) 14%, rgba(161, 148, 5, 1) 36%, rgb(202, 231, 9) 100%);
+}
+
+.btn-delete {
+    border-radius: 6px;
+    background: rgb(97, 7, 7);
+    background: linear-gradient(352deg, rgba(97, 7, 7, 1) 18%, rgba(148, 10, 10, 1) 48%, rgba(255, 0, 0, 1) 100%);
+}
+
+.btn {
+    color: aliceblue;
+    padding: 5px 12px;
+}

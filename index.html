@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <img src="img/book.png" alt="This is our logo" title="Best Logo ever" />
+        <a name="top"></a>
+        <h1>Book Shop Manager</h1>
+        <h2>Create-Read-Update-Delete-List</h2>
+    </header>
+
+    <table class="book-list"></table>
+    <div class="pages-div">
+        <button onclick="onChangePage(-1)">⬅️</button>
+        <div class="pages">
+        </div>
+        <button onclick="onChangePage(1)">➡️</button>
+    </div>
+
+    <section class="book-edit">
+        <h2>Edit book</h2>
+        <input placeholder="Book Name" type="text" class="txt-name" data-id="" />
+        <input placeholder="Book Price" type="text" class="txt-price" />
+        <input placeholder="Book Picture Url" type="text" class="txt-img" />
+        <button onclick="onSaveBook()">Save</button>
+    </section>
+
+    <section class="modal" hidden>
+        <button onclick="onCloseModal()">x</button>
+        <h2 data-id="">Book Details</h2>
+        <h3></h3>
+        <img src="" alt="">
+        <h4></h4>
+        <button class="+" onclick="onChangeRate(1)">➕</button>
+        <h5></h5><button class="-" onclick="onChangeRate(-1)">➖</button>
+        <h5></h5>
+    </section>
+
+
+    <a name="foot"></a>
+    <footer>
+        <p>CopipiRights &copy; 2020 </p>
+        <a href="#top">Scroll to Top</a>
+    </footer>
+
+
+    <!-- <script src="js/demo-variadic-functions.js"></script> -->
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>
